@@ -27,3 +27,9 @@ ec2_mappings = {
     volume_size = "20"
     volume_type = "gp3"
 }
+
+iam_mappings = {
+    name_prefix = "DEV"
+}
+
+iam_devops_users = ["srinivas","arun"]

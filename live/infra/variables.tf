@@ -54,3 +54,14 @@ variable "ec2_mappings" {
         volume_type = string
     })
 }
+
+variable "iam_mappings" = {
+    type = object({
+        name_prefix = string
+    })
+}
+
+variable "iam_devops_users" {
+    type = list(string)
+    default = []
+}

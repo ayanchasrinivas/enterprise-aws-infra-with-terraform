@@ -15,3 +15,9 @@ module "hotstar_ec2" {
   subnet_ids = module.hotstar_vpc.hotstar_vpc_public_subnet_ids
   security_group_ids = [module.hotstar_security_groups.hotstar_alb_sg_id]
 }
+
+module "hotstar_iam" {
+  source = "../../modules/iam"
+  iam_mappings = var.iam_mappings
+  iam_devops_users = var.iam_devops_users
+}
