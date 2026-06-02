@@ -39,3 +39,11 @@ module "hotstar_efs" {
   subnet_ids = module.hotstar_vpc.hotstar_vpc_public_subnet_ids
   security_group_id = module.hotstar_security_groups.hotstar_alb_sg_id
 }
+
+module "hotstar_alb" {
+  source = "../../modules/alb"
+  alb_mappings = var.alb_mappings
+  subnet_ids = module.hotstar_vpc.hotstar_vpc_public_subnet_ids
+  security_group_id = module.hotstar_security_groups.hotstar_alb_sg_id
+  alb_vpc_id =  module.hotstar_vpc.hotstar_vpc_id
+}

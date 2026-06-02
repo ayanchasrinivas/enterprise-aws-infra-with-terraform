@@ -91,3 +91,10 @@ variable "efs_mappings" {
         name_prefix = string
     })
 }
+
+
+variable "alb_mappings" {
+  type = object({
+    name_prefix = string
+  })
+}
