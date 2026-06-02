@@ -47,3 +47,7 @@ ecr_mappings = {
 }
 
 hotstar_ecr_repositories = ["backend", "frontend", "database", "ingress"]
+
+efs_mappings = {
+    name_prefix = "DEV"
+}

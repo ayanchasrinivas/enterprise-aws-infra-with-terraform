@@ -85,3 +85,9 @@ variable "ecr_mappings" {
 variable "hotstar_ecr_repositories" {
     type = list(string)
 }
+
+variable "efs_mappings" {
+    type = object({
+        name_prefix = string
+    })
+}

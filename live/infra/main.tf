@@ -32,3 +32,10 @@ module "hotstar_ecr" {
   ecr_mappings = var.ecr_mappings
   hotstar_ecr_repositories = var.hotstar_ecr_repositories
 }
+
+module "hotstar_efs" {
+  source = "../../modules/efs"
+  efs_mappings = var.efs_mappings
+  subnet_ids = module.hotstar_vpc.hotstar_vpc_public_subnet_ids
+  security_group_id = module.hotstar_security_groups.hotstar_alb_sg_id
+}
