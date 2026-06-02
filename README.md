@@ -1,6 +1,7 @@
 # Enterprise AWS Infrastructure Platform with Terraform
 
-<img width="2400" height="1254" alt="terraform-banner" src="https://github.com/user-attachments/assets/2fe0de01-74f0-4f79-8f9e-2b5567c7ff37" />
+<img width="610" height="123" alt="images" src="https://github.com/user-attachments/assets/2b4d19b8-4939-4db3-b42f-f2bc0e8efef5" />
+<br>
 
 
 A Production-Grade Infrastructure as Code (IaC) Project that Designs, Provisions, and manages a Complete Enterprise AWS Platform using Terraform. This repository follows Industry-Standard Cloud Architecture patterns commonly adopted by large-scale product companies and Enterprise Organizations.
