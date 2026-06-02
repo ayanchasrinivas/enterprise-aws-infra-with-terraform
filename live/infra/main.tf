@@ -26,3 +26,9 @@ module "hotstar_lightsail" {
   source = "../../modules/lightsail"
   lightsail_mappings = var.lightsail_mappings
 }
+
+module "hotstar_ecr" {
+  source = "../../modules/ecr"
+  ecr_mappings = var.ecr_mappings
+  hotstar_ecr_repositories = var.hotstar_ecr_repositories
+}
