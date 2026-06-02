@@ -21,3 +21,8 @@ module "hotstar_iam" {
   iam_mappings = var.iam_mappings
   iam_devops_users = var.iam_devops_users
 }
+
+module "hotstar_lightsail" {
+  source = "../../modules/lightsail"
+  lightsail_mappings = var.lightsail_mappings
+}

@@ -33,3 +33,11 @@ iam_mappings = {
 }
 
 iam_devops_users = ["srinivas","arun"]
+
+lightsail_mappings {
+    instance_count = 2
+    name_prefix = "DEV"
+    blueprint_id = "amazon_linux_2"
+    bundle_id = "micro_3_0"
+    key_pair_name = "srinivas"
+}
