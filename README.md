@@ -1,6 +1,6 @@
 # Enterprise AWS Infrastructure Platform with Terraform
 
-<img width="810" height="115" alt="images" src="https://github.com/user-attachments/assets/2b4d19b8-4939-4db3-b42f-f2bc0e8efef5" />
+<img width="610" height="115" alt="images" src="https://github.com/user-attachments/assets/2b4d19b8-4939-4db3-b42f-f2bc0e8efef5" />
 <br>
 
 
