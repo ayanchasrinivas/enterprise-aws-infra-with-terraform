@@ -29,3 +29,7 @@ output "hotstar_vpc_ngw_id" {
 output "hotstar_alb_sg_id" {
     value = module.securitygroups.hotstar_alb_sg_id
 }
+
+output "hotstar_alb_arn" {
+    value = module.hotstar_alb.hotstar_alb_arn
+}

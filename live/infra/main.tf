@@ -47,3 +47,10 @@ module "hotstar_alb" {
   security_group_id = module.hotstar_security_groups.hotstar_alb_sg_id
   alb_vpc_id =  module.hotstar_vpc.hotstar_vpc_id
 }
+
+module "hotstar_waf" {
+  source = "../../modules/waf-v2"
+  waf_mappings = var.waf_mappings
+  alb_arn = module.hotstar_alb.hotstar_alb_arn
+}
+    

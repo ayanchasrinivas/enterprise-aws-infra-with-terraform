@@ -55,3 +55,9 @@ efs_mappings = {
 alb_mappings = {
     name_prefix = "DEV"
 }
+
+waf_mappings = {
+    name_prefix = "DEV"
+    enable_shield_advanced = true
+    shield_count = 1
+}

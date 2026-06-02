@@ -98,3 +98,11 @@ variable "alb_mappings" {
     name_prefix = string
   })
 }
+
+variable "waf_mappings" {
+    type = object({
+        name_prefix = string
+        enable_shield_advanced = bool
+        shield_count = number
+    })
+}
